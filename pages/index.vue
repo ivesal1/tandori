@@ -1,6 +1,5 @@
 <template>
   <div class="container mx-auto">
-    <buttons />
     <div class="mt-8">
       <div class="flex justify-end">
         <div class="text-white page-title">تمام دوره ها</div>

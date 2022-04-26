@@ -1,6 +1,5 @@
 <template>
   <div class="container mx-auto">
-      <buttons/>
       <food/>
   </div>
 </template>
