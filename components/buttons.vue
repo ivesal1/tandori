@@ -2,10 +2,12 @@
   <div class="mt-8">
     <div class="flex flex-row justify-end">
         <div v-for="button in buttons" :key="button.data">
-            <div class="flex flex-row items-center buttons-style mx-1">
+            <nuxtLink :to="button.code">
+            <div class="flex flex-row cursor-pointer items-center buttons-style mx-1">
                 <div class="buttons-name-color">{{button.name}}</div>
                 <div><img class="icon-width" :src=button.icon></div>
             </div>
+            </nuxtLink>
         </div>
     </div>
   </div>
@@ -20,12 +22,6 @@ export default {
             buttons:[]
         }
     },
-    // async asyncData() {
-    //     const buttons = await axios.get('https://tandori.ir/plus/v1/categories')
-    //     return {
-    //         buttons : buttons
-    //     }
-    // },
     created(){
         this.fetchSomething().then(res => {
             this.buttons = res.data.data

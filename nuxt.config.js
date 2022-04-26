@@ -8,9 +8,14 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+           { rel:'preconnect' , href:'https://fonts.googleapis.com'},
+           {rel:'preconnect',href:'https://fonts.gstatic.com'},
+            {rel:'stylesheet',href:'https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap'}],
   },
-
+  // <link rel="preconnect" href="https://fonts.googleapis.com">
+  // <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  // <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/style/main.css'],
 
