@@ -1,6 +1,6 @@
 <template>
 <div class="md:flex md:flex-row-reverse mt-8 ml-30">
-    <div class="salam-chetori md:mx-3 mt-8 ml-30" v-for="product in products" :key="product.data">
+    <div  class="salam-chetori md:mx-3 mt-8 md:ml-0 adjust-product" v-for="product in products" :key="product.data">
         <div style="">
             <div :style="{ 'background-image':`url('${product.pictures.cover}')` }" class="course-pic bgimg-adjust">
                <div>
@@ -84,5 +84,11 @@ export default {
 
 .wrapper ,.items {
     flex-shrink: 5;
+}
+
+@media (min-width: 300px) and (max-width: 640px){
+    .adjust-product{
+        margin-left:100px;
+    }
 }
 </style>
