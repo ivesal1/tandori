@@ -1,7 +1,7 @@
 <template>
   <div class="mt-8">
     <div class="flex flex-row justify-end">
-        <div v-for="button in buttons" :key="button.data">
+        <div class="" v-for="button in buttons" :key="button.data">
             <nuxtLink :to="button.code">
             <div class="flex flex-row cursor-pointer items-center buttons-style mx-1">
                 <div class="buttons-name-color">{{button.name}}</div>
